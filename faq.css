@@ -1,0 +1,100 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', cursive;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:black ;
+}
+
+.container{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    color: orange;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h2{
+    font-weight: 300;
+    margin-bottom: 10px;
+    color:#E5E5E5;
+}
+
+.text{
+    color:#E5E5E5;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.accordion{
+    width: 100%;
+    position: relative;
+}
+
+.accordion .question{
+    border-top: #E5E5E5 solid 1px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion .question:last-child{
+    border-bottom: #E5E5E5 solid 1px;
+}
+
+.accordion .question button{
+    /* text-decoration: none; */
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+.accordion .question:hover button{
+    color: orange;
+}
+
+.accordion .answer{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordion .answer p{
+    color: orange;
+}
+
+/* FOR JAVASCRIPT */
+.fa-angle-up{
+    color: #E5E5E5;
+}
+
+
